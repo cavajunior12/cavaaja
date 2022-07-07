@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana;
+    padding: 10px;
+    background: #FFFF00;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 70px;
+    text-align: left;
+    background: rgb(192, 214, 255);
+}
+
+.header h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #FFC0CB;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #0000FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(12, 122, 130);
+    color: rgb(28, 129, 112);
+}
+
+.kotak {
+    width: 70%;
+    padding: 10px;
+    border: 5px solid rgb(33, 139, 134);
+    border-style: dotted;
+    border-color: rgb(7, 26, 28);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    color: rgb(125, 39, 95);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #ADFF2F;
+    color: rgb(15, 139, 63);
+}
+
+/*middlecolumn*/
+.middlecolumn {
+    float: left;
+    width: 100%;
+}
+.middlecolumn h2 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: rgb(214, 216, 223);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style Form Input*/
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(13, 196, 172);
+    margin-top: 20px;
+}
+
+div.gallery:hover {
+    border: 1px solid rgb(22, 197, 213);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+/* table 1*/
+.table1 {
+    font-family: sans-serif;
+    color: #08110f;
+    border-collapse: collapse;
+}
+
+.table1,
+th,
+td {
+    border: 1px solid rgb(23, 155, 167);
+    padding: 8px 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px
+        wide,
+        make the two columns stack on top of each other instead of
+        next
+        to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn,
+    .kotak {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px
+        wide,
+        make the navigation links stack on top of each other instead
+        of
+        next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
